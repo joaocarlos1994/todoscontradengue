@@ -2,7 +2,7 @@ package br.com.fatec.api.entity;
 
 public class Endereco {
 	
-	private String rua;
+	private String rua; //////////////////
 	public String getRua() {
 		return rua;
 	}
