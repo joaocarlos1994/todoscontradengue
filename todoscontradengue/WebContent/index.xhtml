@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/comuns/base.xhtml">
+	<ui:define name="body">
+
+		<div id="coursel"
+			style="text-align: left; margin: 0 auto; width: 605px;">
+			<div class="ui-grid ui-grid-responsive">
+				<div class="ui-grid-row">
+					<div class="ui-grid-col-12">
+						<p:carousel autoPlayInterval="2000" rows="1" effect="easeInStrong"
+							circular="true" itemStyle="width:1299;">
+
+							<h:panelGrid columns="1">
+								<p:graphicImage name="/imgs/dengue.jpg" />
+								<h:outputText style="font-weight:bold;"
+									value="Dengue aqui não. Denúncie focos de Dengue em sua cidade" />
+							</h:panelGrid>
+
+							<h:panelGrid columns="1">
+								<p:graphicImage name="/imgs/sintomas.jpg" />
+								<h:outputText style="font-weight:bold;"
+									value="Entenda a diferença entre Dengue, Zika e Chikungunya" />
+							</h:panelGrid>
+						</p:carousel>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui-grid ui-grid-responsive">
+			<div class="ui-grid-row">
+				<div class="ui-grid-col-4">
+					<p:panel id="rpnl1" header="Dengue" styleClass="denguePanel">
+						<p>Dengue é uma doença tropical infecciosa causada pelo vírus
+							da dengue, um arbovírus da família Flaviviridae, gênero
+							Flavivírus e que inclui quatro tipos imunológicos: DEN-1, DEN-2,
+							DEN-3 e DEN-4"</p>
+					</p:panel>
+				</div>
+				<div class="ui-grid-col-4">
+					<p:panel id="rpnl2" header="Prevenção" styleClass="denguePanel">
+						<p>A prevenção é a única arma contra a doença.A melhor forma
+							de se evitar a dengue é combater os focos de acúmulo de água,
+							locais propícios para a criação do mosquito transmissor da
+							doença.</p>
+					</p:panel>
+				</div>
+				<div class="ui-grid-col-4">
+					<p:panel id="rpnl3" header="Sintomas" styleClass="denguePanel" >
+						<p>O tempo médio do ciclo é de 5 a 6 dias, e o intervalo entre
+							a picada e a manifestação da doença chama-se período de
+							incubação.</p>
+					</p:panel>
+				</div>
+			</div>
+		</div>
+
+	</ui:define>
+</ui:composition>
+
+</html>

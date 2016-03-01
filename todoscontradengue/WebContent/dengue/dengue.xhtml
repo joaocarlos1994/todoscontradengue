@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title><ui:insert name="title">Dengue - Prevenção</ui:insert></title>
+</h:head>
+
+<ui:composition template="/WEB-INF/comuns/base.xhtml">
+	<ui:define name="body">
+
+
+
+		<div>
+			<div class="ui-grid ui-grid-responsive">
+				<div class="ui-grid-row">
+					<div class="ui-grid-col-6">
+						<p:graphicImage style="width: 600px; height: 400px;"
+							name="/imgs/dengue-descricao.jpg" />
+					</div>
+        			<div class="ui-grid-col-6">
+        				<p:graphicImage style="width: 600px; height: 400px;"
+							name="/imgs/dengue-descricao2.jpg" />
+        			</div>
+				</div>
+			</div>
+		</div>
+
+		<br />
+
+		<div class="ui-grid ui-grid-responsive">
+			<div class="ui-grid-row">
+				<div class="ui-grid-col-12">
+					<div id="descriaCaoDengue" style="background-color: #FFFFFF;">
+						<p
+							style="font-weight: bold; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;">Dengue
+							é uma doença tropical infecciosa causada pelo vírus da dengue, um
+							arbovírus da família Flaviviridae, gênero Flavivírus e que inclui
+							quatro tipos imunológicos: DEN-1, DEN-2, DEN-3 e DEN-4. Os
+							sintomas incluem febre, dor de cabeça, dores musculares e
+							articulares e uma erupção cutânea característica que é semelhante
+							à causada pelo sarampo. Em uma pequena proporção de casos, a
+							doença pode evoluir para a dengue hemorrágica com risco de morte,
+							resultando em sangramento, baixos níveis de plaquetas sanguíneas,
+							extravasamento de plasma no sangue ou até diminuição da pressão
+							arterial a níveis perigosamente baixos.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<div class="ui-grid ui-grid-responsive">
+				<div class="ui-grid-row">
+					<div class="ui-grid-col-12">
+						<h:form>
+							<p:accordionPanel
+								style="background-color:#97E855; font-weight:bold;">
+								<p:tab title="Transmissão">
+									<p>A transmissão se faz pela picada do mosquito Aedes
+										aegypti. Eles normalmente picam durante o dia, principalmente
+										no início da manhã e à noite, mas são capazes de morder e
+										espalhar a infecção em qualquer hora do dia, durante todo o
+										ano. Entre as outras espécies de Aedes que transmitem a doença
+										estão o A. albopictus, o A. polynesiensis e o A. scutellaris.
+										Os seres humanos são o principal hospedeiro do vírus, mas
+										também circula em primatas.</p>
+								</p:tab>
+								<p:tab title="Sintomas">
+									<p>Os sintomas característicos da dengue são febre de
+										início súbito, dor de cabeça (normalmente localizada atrás dos
+										olhos), dores musculares e articulares, além de erupções
+										cutâneas. O nome alternativo para a dengue, "febre
+										quebra-ossos", vem da dor causada em músculos e articulações.
+										O curso da infecção é dividido em três fases: febril, crítica
+										e de recuperação.</p>
+								</p:tab>
+								<p:tab title="Prevenção">
+									<p>Ainda nenhuma vacina preventiva de dengue foi aprovada.
+										A prevenção depende do controle e da proteção contra as
+										picadas do mosquito transmissor. A Organização Mundial da
+										Saúde, recomenda um programa integrado de controle e prevenção
+										que consiste em cinco itens:</p>
+
+									<ol>
+										<li>Advogar e criar mobilização social e legislação para
+											assegurar que os organismos e as comunidades de saúde pública
+											sejam reforçadas</li>
+										<li>A colaboração entre a saúde e outros setores (público
+											e privado);</li>
+										<li>Uma abordagem integrada para o controle da doença e
+											para maximizar a utilização dos recursos;</li>
+										<li>Tomada de decisão baseada em evidências para
+											assegurar que quaisquer intervenções sejam direcionados de
+											forma adequada, e</li>
+										<li>Desenvolvimento das capacidades para garantir uma
+											resposta adequada à situação local.</li>
+									</ol>
+
+									<p>O método principal para controlar o A. aegypti é
+										eliminando seus habitats. Isto é feito esvaziando recipientes
+										de água, ou por adição de insecticidas ou agentes de controlo
+										biológico a estas áreas, embora a pulverização de insecticidas
+										a base de organofosfato ou piretróide não é considerado
+										eficaz. Reduzir o acúmulo de água através da modificação
+										ambiental é o método preferido de controle, dadas as
+										preocupações do efeito negativo sobre a saúde que o uso de
+										inseticidas causa e também dificuldades logísticas com os
+										agentes de controle.</p>
+
+								</p:tab>
+							</p:accordionPanel>
+						</h:form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</ui:define>
+</ui:composition>
+</html>

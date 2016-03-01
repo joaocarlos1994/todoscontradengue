@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:body>
+	<h:form>
+		<div class="ui-grid ui-grid-responsive">
+			<div class="ui-grid-row">
+				<div class="ui-grid-col-12">
+					<p:growl id="messages" />
+					<p:menubar id="navbarMosquito" style="background:#97E855; width: 100%; height: 50px;">
+						<p:menuitem>
+							<h:outputText value="Dengue " style="font-weight:bold"/>
+						</p:menuitem>
+						<p:menuitem>
+							<h:outputText value="Zika Vírus " style="font-weight:bold"/>
+						</p:menuitem>
+						<p:menuitem>
+							<h:outputText value="Chikungunya " style="font-weight:bold"/>
+						</p:menuitem>
+					</p:menubar>
+				</div>
+			</div>
+		</div>
+	</h:form>
+</h:body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+
+	<title>Lista de Pessoas</title>
+
+</h:head>
+
+<h:body>
+
+	<h1>Lista Usuários Cadastrados</h1>
+	<h:form>
+
+		<div class="container">
+			<table class="table">
+
+			<tr>
+				<th>Nome</th>
+				<th>E-mail</th>
+				<th>Password</th>
+			</tr>
+
+			<ui:repeat var="pessoa" value="#{pessoaBean.pessoas}">
+				<tr>
+					<td>#{pessoa.nome}</td>
+					<td>#{pessoa.email}</td>
+					<td>#{pessoa.password}</td>
+				</tr>
+			</ui:repeat>
+
+
+		</table>
+			
+		</div>
+
+	</h:form>
+
+</h:body>
+
+</html>
